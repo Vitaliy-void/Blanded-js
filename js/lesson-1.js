@@ -219,17 +219,21 @@
 // В іншому випадку вона запитує підтвердження через confirm 
 // і повертає його результат (true/false).
 
-function isAdult(age) {
-    // if (typeof age !== 'number') {
-    //     return 'Not a number!';
-    // } else if (age >= 18) {
-    //     return true;
-    // } else {
-    //     return confirm("Вам є 18 років?");
-    // }
-return age >=18 || confirm("Вам є 18 років?");
-}
+// function isAdult(age) {
+//     if (typeof age !== 'number') {
+//         return 'Not a number!';
+//     } else if (age >= 18) {
+//         return true;
+//     } else {
+//         return confirm("Вам є 18 років?");
+//     }
+// }
 
+// function isAdult(age) {
+//     return age >=18 || confirm("Вам є 18 років?");
+// }
+
+// Альтернативний варіант з використанням тернарного оператора
 // function isAdult(age) {
 //     return (typeof age === 'number') ? (age >= 18 ? true : confirm("Вам є 18 років?")) : 'Not a number!';
 // }
@@ -238,47 +242,27 @@ console.log(isAdult('17'));
 console.log(isAdult(18)); 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Альтернативний варіант з використанням тернарного оператора
-
-
 // Напишіть функцію fizzBuzz(num), яка приймає число і перевіряє кожне число від 1 до num:
 // Якщо число ділитися  без остачі на 3 - виводить в консоль 'fizz',
 // якщо ділиться  без остачі на 5 - виводить в консоль 'buzz',
 // якщо ділиться  без остачі і на 3, і на 5 - виводить в консоль 'fizzbuzz'.
 
-// function fizzBuzz(num) {
-//     if (typeof num !== 'number' || num <= 0) {
-//         return 'Not a number!';
-//     }
-//     for (let i = 1; i <= num; i++) {
-//         if (i % 3 === 0 && i % 5 === 0) {
-//             console.log('fizzbuzz');
-//         } else if (i % 3 === 0) {
-//             console.log('fizz');
-//         } else if (i % 5 === 0) {
-//             console.log('buzz');
-//         }
-//     }
-// }
+function fizzBuzz(num) {
+    if (typeof num !== 'number' || num <= 0) {
+        return 'Not a number!';
+    }
+    for (let i = 1; i <= num; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log('fizzbuzz');
+        } else if (i % 3 === 0) {
+            console.log('fizz');
+        } else if (i % 5 === 0) {
+            console.log('buzz');
+        }
+    }
+}
 
-// fizzBuzz(20);
+fizzBuzz(20);
 
 
 
