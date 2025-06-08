@@ -220,13 +220,14 @@
 // і повертає його результат (true/false).
 
 function isAdult(age) {
-    if (typeof age !== 'number') {
-        return 'Not a number!';
-    } else if (age >= 18) {
-        return true;
-    } else {
-        return confirm("Вам є 18 років?") ? true : false;
-    }
+    // if (typeof age !== 'number') {
+    //     return 'Not a number!';
+    // } else if (age >= 18) {
+    //     return true;
+    // } else {
+    //     return confirm("Вам є 18 років?");
+    // }
+return age >=18 || confirm("Вам є 18 років?");
 }
 
 // function isAdult(age) {
